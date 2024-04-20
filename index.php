@@ -14,6 +14,9 @@
 </head>
 <body>
     <script>
+        //Cambia TU_APP_ID_AQUI por la appId que te proporciona meta for developers
+        const facebookAppId = 'TU_APP_ID_AQUI';
+
         (function(d, s, id){
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) {return;}
@@ -25,7 +28,7 @@
 
         window.fbAsyncInit = function() {
             FB.init({
-                appId   : '265233359804504',
+                appId   : facebookAppId,
                 xfbml   : true,
                 version : 'v18.0'
             });
@@ -77,7 +80,7 @@
         };
     </script>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v18.0&appId=265233359804504" nonce="lnbTLdER"></script>
+    <script async defer crossorigin="anonymous" src=`https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v18.0&appId=${facebookAppId}` nonce="lnbTLdER"></script>
     <header>
         <h1></i>MiComida</h1>
         <nav>
