@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    background-color: rgb(198, 231, 201);
+}
+
+main{
+    margin: 10px 20px;
+}
+
+article{
+    padding: 10px 15px;
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 22%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.teclado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.letra,#random{
+    width: 15%;
+    background-color: rgba(64, 218, 33, 0.842);
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+    border: none;
+}
+
+.letra:hover{
+    background-color: rgba(64, 218, 33, 1);
+    cursor: pointer;  
+}
+
+#random:hover{
+    background-color: rgba(241, 124, 15,1); 
+}
+
+#random{
+    width: 100%;
+    background-color: rgba(241, 124, 15,.9);
+    cursor: pointer;
+}
+
+.muestra{
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+ul{
+    margin-left: 20px;
+    list-style-type: decimal-leading-zero;
+    font-family: "Roboto";
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#info{
+    width: 77%;
+    background-color: white;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+#ingredientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    
+}
+
+.slide-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;   
+}
+
+.slide>img{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#instructios{
+    width: 70%;
+}
+
+#instructios>p{
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+#instructios>p::-webkit-scrollbar {
+    width: 6px;
+}
+
+#instructios>p::-webkit-scrollbar-thumb {
+    background-color: rgba(241, 124, 15,1);
+}
+
+#instructios>p::-webkit-scrollbar-track {
+    background: #999;
+}
+
+
+#comida{
+    margin:10px;
+    margin-left: 20px;
+}
+
+h3,h4{
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+h4{
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+#mas{
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.con-galeri{
+    width: calc(25% - 20px);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.img-galeri{
+    border-radius: 10px;
+    width: 100%;
+    font-family: "Roboto";
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.con-galeri>figcaption{
+    margin: 10px;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(64, 218, 33, 0.842);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: "Roboto";
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav{
+   display: flex;
+   flex-direction: row;
+   align-items: center; 
+}
+
+h2{
+    padding: 10px 15px;
+}
+
+input[type="text"]{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    box-shadow: inset -2px -3px 4px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+}
+
+.sesion,.cerrar-sesion{
+    padding: 5px;
+    margin: 0 10px;
+    background-color: rgb(36, 182, 6);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    font-family: "Roboto";
+    cursor: pointer;
+}
+
+.cerrar-sesion{
+    background-color: rgb(194, 37, 9);
+}
+
+.cerrar-sesion:hover{
+    background-color: rgb(156, 30, 7);
+}
+
+.sesion:hover{
+    background-color: rgb(41, 156, 18)
+}
+
+input[type="text"]:focus{
+  outline: 1px solid rgb(47, 90, 211);
+  box-shadow: inset -3px -3px 4px rgba(0, 0, 0, 0.3); 
+}
+
+#btn-buscar{
+    padding: 6px;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(36, 182, 6);
+    border: none;
+}
+
+#btn-buscar:hover{
+    background-color: rgb(41, 156, 18);
+    cursor: pointer;
+}
+
+footer{
+    padding: 8px;
+    font-size: 10px;
+    font-family: "Roboto";
+    text-align: center;
+    background-color: rgba(64, 218, 33, .9);
+    color: white; 
+}
