@@ -1,7 +1,7 @@
 miComidaAPIs
 
-Configuración: 
-opten appId de faccebook:
+Configuración:
+Opten appId de faccebook:
 
 Antes de comenzar, asegúrate de tener un appId de la API de Meta Developers.
 
