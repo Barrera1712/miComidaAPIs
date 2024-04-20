@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $jsonData = file_get_contents("php://input");
     $data = json_decode($jsonData);
     $query=$data->query;
-    $accessKey = 'divFNZ0or3iLklRqhPqqYzdI5rE_71w68m7eGITmio4';
+    $accessKey = 'Tu_Acces_Key';
     $perPage = 5;
 
     $response = file_get_contents("https://api.unsplash.com/search/photos?query=$query&per_page=$perPage&client_id=$accessKey");
