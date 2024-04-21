@@ -1,4 +1,5 @@
 # miComidaAPIs (By: Barrera Sánchez Uriel)
+Aplicación web para buscar y compartir recetas de cocina usando las APIs de The Meal DB, Facebook Y Unsplash.
 
 ## Configuración:
 
